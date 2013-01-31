@@ -138,7 +138,7 @@
 				6D8D3E2016B9E7FA003F3542 /* RemoveNoteCommand.h */,
 				6D8D3E2116B9E7FA003F3542 /* RemoveNoteCommand.m */,
 			);
-			name = control;
+			path = control;
 			sourceTree = "<group>";
 		};
 		6D8D480516B8447F00085FA4 = {
@@ -234,7 +234,7 @@
 				6D8D488616B8A40800085FA4 /* NoteCell.h */,
 				6D8D488716B8A40800085FA4 /* NoteCell.m */,
 			);
-			name = view;
+			path = view;
 			sourceTree = "<group>";
 		};
 		6D8D485F16B8510D00085FA4 /* resources */ = {
@@ -259,7 +259,7 @@
 				6D8D487016B87ACD00085FA4 /* Note.h */,
 				6D8D487116B87ACD00085FA4 /* Note.m */,
 			);
-			name = model;
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
