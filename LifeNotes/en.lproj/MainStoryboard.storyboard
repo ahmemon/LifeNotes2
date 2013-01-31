@@ -115,24 +115,27 @@
             </objects>
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
-        <!--Notes View Controller - Tags-->
+        <!--Tags View Controller - Tags-->
         <scene sceneID="g1q-zH-bmy">
             <objects>
-                <tableViewController id="Od3-2G-sw6" customClass="NotesViewController" sceneMemberID="viewController">
+                <tableViewController id="Od3-2G-sw6" customClass="TagsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" id="bYP-GL-IJi">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tagCell" rowHeight="40" id="8vb-Sn-qUV">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tagCell" rowHeight="40" id="8vb-Sn-qUV" customClass="TagCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="39"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-td-T5b">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-td-T5b">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="189" id="hF2-Tq-8ZL"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
@@ -141,11 +144,11 @@
                                 </view>
                                 <constraints>
                                     <constraint firstItem="rPN-td-T5b" firstAttribute="top" secondItem="8vb-Sn-qUV" secondAttribute="top" type="default" id="E06-hF-wVr"/>
-                                    <constraint firstItem="rPN-td-T5b" firstAttribute="leading" secondItem="8vb-Sn-qUV" secondAttribute="leading" type="default" id="Sy2-NU-5aX"/>
-                                    <constraint firstItem="rPN-td-T5b" firstAttribute="trailing" secondItem="8vb-Sn-qUV" secondAttribute="trailing" type="default" id="VEY-dc-goB"/>
-                                    <constraint firstItem="rPN-td-T5b" firstAttribute="centerY" secondItem="8vb-Sn-qUV" secondAttribute="centerY" type="default" id="sK4-m8-mtf"/>
+                                    <constraint firstItem="rPN-td-T5b" firstAttribute="bottom" secondItem="8vb-Sn-qUV" secondAttribute="bottom" type="default" id="ST9-JG-pIE"/>
+                                    <constraint firstItem="rPN-td-T5b" firstAttribute="leading" secondItem="8vb-Sn-qUV" secondAttribute="leading" constant="4" id="xcf-xs-iMi"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="tagTextView" destination="rPN-td-T5b" id="Ncb-bi-eyl"/>
                                     <segue destination="Gjy-xk-YHs" kind="push" id="rWa-M6-776"/>
                                 </connections>
                             </tableViewCell>
@@ -230,8 +233,17 @@
                 <relationship kind="action" name="addNoteDoneTap:"/>
             </relationships>
         </class>
+        <class className="TagCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TagCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tagTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
         <class className="TagNotesViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TagNotesViewController.h"/>
+        </class>
+        <class className="TagsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TagsViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -6,6 +6,12 @@
 //  Copyright (c) 2013 Amir Memon. All rights reserved.
 //
 
+#import "AddNoteCell.h"
+#import "AddNoteCommand.h"
+#import "Note.h"
+#import "NoteStore.h"
+#import "Tag.h"
+#import "TagCell.h"
 #import "TagsViewController.h"
 
 @interface TagsViewController ()
@@ -44,24 +50,23 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return NoteStore.defaultStore.allTags.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString* CellIdentifier = @"tagCell";
+    TagCell* cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    Tag* t = [NoteStore.defaultStore.allTags objectAtIndex:indexPath.row];
+    cell.tagTextView.text = t.tagName;
     
     return cell;
 }

@@ -44,6 +44,8 @@
 		6D8D488516B89FA800085FA4 /* AddNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488316B89FA800085FA4 /* AddNoteCell.m */; };
 		6D8D488816B8A40800085FA4 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488716B8A40800085FA4 /* NoteCell.m */; };
 		6D8D488916B8A40800085FA4 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488716B8A40800085FA4 /* NoteCell.m */; };
+		6DBD7F9016BAE03200793D4B /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD7F8F16BAE03200793D4B /* TagCell.m */; };
+		6DBD7F9116BAE03200793D4B /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD7F8F16BAE03200793D4B /* TagCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		6D8D488316B89FA800085FA4 /* AddNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteCell.m; sourceTree = "<group>"; };
 		6D8D488616B8A40800085FA4 /* NoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCell.h; sourceTree = "<group>"; };
 		6D8D488716B8A40800085FA4 /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
+		6DBD7F8E16BAE03200793D4B /* TagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCell.h; sourceTree = "<group>"; };
+		6DBD7F8F16BAE03200793D4B /* TagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,14 +229,16 @@
 			children = (
 				6D8D488216B89FA800085FA4 /* AddNoteCell.h */,
 				6D8D488316B89FA800085FA4 /* AddNoteCell.m */,
+				6D8D488616B8A40800085FA4 /* NoteCell.h */,
+				6D8D488716B8A40800085FA4 /* NoteCell.m */,
 				6D8D486016B8516000085FA4 /* NotesViewController.h */,
 				6D8D486116B8516000085FA4 /* NotesViewController.m */,
+				6DBD7F8E16BAE03200793D4B /* TagCell.h */,
+				6DBD7F8F16BAE03200793D4B /* TagCell.m */,
 				6D8D486316B851F000085FA4 /* TagsViewController.h */,
 				6D8D486416B851F000085FA4 /* TagsViewController.m */,
 				6D8D486616B8528700085FA4 /* TagNotesViewController.h */,
 				6D8D486716B8528700085FA4 /* TagNotesViewController.m */,
-				6D8D488616B8A40800085FA4 /* NoteCell.h */,
-				6D8D488716B8A40800085FA4 /* NoteCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 				6D8D488816B8A40800085FA4 /* NoteCell.m in Sources */,
 				6D8D3E1F16B9D19B003F3542 /* AddNoteCommand.m in Sources */,
 				6D8D3E2216B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */,
+				6DBD7F9016BAE03200793D4B /* TagCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +410,7 @@
 				6D8D488916B8A40800085FA4 /* NoteCell.m in Sources */,
 				6D8D3E2316B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */,
 				6D8D3E2416B9E802003F3542 /* AddNoteCommand.m in Sources */,
+				6DBD7F9116BAE03200793D4B /* TagCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
