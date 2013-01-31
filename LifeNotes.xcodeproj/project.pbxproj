@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D8D3E1F16B9D19B003F3542 /* AddNoteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D3E1E16B9D19B003F3542 /* AddNoteCommand.m */; };
+		6D8D3E2216B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D3E2116B9E7FA003F3542 /* RemoveNoteCommand.m */; };
+		6D8D3E2316B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D3E2116B9E7FA003F3542 /* RemoveNoteCommand.m */; };
+		6D8D3E2416B9E802003F3542 /* AddNoteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D3E1E16B9D19B003F3542 /* AddNoteCommand.m */; };
 		6D8D481516B8447F00085FA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8D481416B8447F00085FA4 /* UIKit.framework */; };
 		6D8D481716B8447F00085FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8D481616B8447F00085FA4 /* Foundation.framework */; };
 		6D8D481916B8447F00085FA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8D481816B8447F00085FA4 /* CoreGraphics.framework */; };
@@ -17,10 +21,8 @@
 		6D8D482916B8447F00085FA4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D482816B8447F00085FA4 /* Default@2x.png */; };
 		6D8D482B16B8447F00085FA4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D482A16B8447F00085FA4 /* Default-568h@2x.png */; };
 		6D8D482E16B8447F00085FA4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D482C16B8447F00085FA4 /* MainStoryboard.storyboard */; };
-		6D8D483116B8448000085FA4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D483016B8448000085FA4 /* FirstViewController.m */; };
 		6D8D483316B8448000085FA4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D483216B8448000085FA4 /* first.png */; };
 		6D8D483516B8448000085FA4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D483416B8448000085FA4 /* first@2x.png */; };
-		6D8D483816B8448000085FA4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D483716B8448000085FA4 /* SecondViewController.m */; };
 		6D8D483A16B8448000085FA4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D483916B8448000085FA4 /* second.png */; };
 		6D8D483C16B8448000085FA4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D483B16B8448000085FA4 /* second@2x.png */; };
 		6D8D484416B8448000085FA4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8D484316B8448000085FA4 /* SenTestingKit.framework */; };
@@ -28,6 +30,20 @@
 		6D8D484616B8448000085FA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8D481616B8447F00085FA4 /* Foundation.framework */; };
 		6D8D484E16B8448000085FA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6D8D484C16B8448000085FA4 /* InfoPlist.strings */; };
 		6D8D485116B8448000085FA4 /* LifeNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D485016B8448000085FA4 /* LifeNotesTests.m */; };
+		6D8D486216B8516000085FA4 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D486116B8516000085FA4 /* NotesViewController.m */; };
+		6D8D486516B851F000085FA4 /* TagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D486416B851F000085FA4 /* TagsViewController.m */; };
+		6D8D486816B8528700085FA4 /* TagNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D486716B8528700085FA4 /* TagNotesViewController.m */; };
+		6D8D486B16B8531A00085FA4 /* LifeNotesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D486916B8531900085FA4 /* LifeNotesModel.xcdatamodeld */; };
+		6D8D486F16B8559B00085FA4 /* NoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D486E16B8559B00085FA4 /* NoteStore.m */; };
+		6D8D487216B87ACD00085FA4 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D487116B87ACD00085FA4 /* Note.m */; };
+		6D8D487316B87ACD00085FA4 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D487116B87ACD00085FA4 /* Note.m */; };
+		6D8D487616B87ACE00085FA4 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D487516B87ACE00085FA4 /* Tag.m */; };
+		6D8D487716B87ACE00085FA4 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D487516B87ACE00085FA4 /* Tag.m */; };
+		6D8D487D16B8811B00085FA4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8D487C16B8811B00085FA4 /* CoreData.framework */; };
+		6D8D488416B89FA800085FA4 /* AddNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488316B89FA800085FA4 /* AddNoteCell.m */; };
+		6D8D488516B89FA800085FA4 /* AddNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488316B89FA800085FA4 /* AddNoteCell.m */; };
+		6D8D488816B8A40800085FA4 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488716B8A40800085FA4 /* NoteCell.m */; };
+		6D8D488916B8A40800085FA4 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488716B8A40800085FA4 /* NoteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D8D3E1D16B9D19B003F3542 /* AddNoteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteCommand.h; sourceTree = "<group>"; };
+		6D8D3E1E16B9D19B003F3542 /* AddNoteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteCommand.m; sourceTree = "<group>"; };
+		6D8D3E2016B9E7FA003F3542 /* RemoveNoteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoveNoteCommand.h; sourceTree = "<group>"; };
+		6D8D3E2116B9E7FA003F3542 /* RemoveNoteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveNoteCommand.m; sourceTree = "<group>"; };
 		6D8D481016B8447F00085FA4 /* LifeNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8D481416B8447F00085FA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6D8D481616B8447F00085FA4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,12 +75,8 @@
 		6D8D482816B8447F00085FA4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6D8D482A16B8447F00085FA4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6D8D482D16B8447F00085FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6D8D482F16B8447F00085FA4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		6D8D483016B8448000085FA4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		6D8D483216B8448000085FA4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		6D8D483416B8448000085FA4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		6D8D483616B8448000085FA4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		6D8D483716B8448000085FA4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		6D8D483916B8448000085FA4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		6D8D483B16B8448000085FA4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		6D8D484216B8448000085FA4 /* LifeNotesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeNotesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +85,24 @@
 		6D8D484D16B8448000085FA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6D8D484F16B8448000085FA4 /* LifeNotesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeNotesTests.h; sourceTree = "<group>"; };
 		6D8D485016B8448000085FA4 /* LifeNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeNotesTests.m; sourceTree = "<group>"; };
+		6D8D486016B8516000085FA4 /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		6D8D486116B8516000085FA4 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		6D8D486316B851F000085FA4 /* TagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsViewController.h; sourceTree = "<group>"; };
+		6D8D486416B851F000085FA4 /* TagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsViewController.m; sourceTree = "<group>"; };
+		6D8D486616B8528700085FA4 /* TagNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagNotesViewController.h; sourceTree = "<group>"; };
+		6D8D486716B8528700085FA4 /* TagNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagNotesViewController.m; sourceTree = "<group>"; };
+		6D8D486A16B8531A00085FA4 /* LifeNotesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeNotesModel.xcdatamodel; sourceTree = "<group>"; };
+		6D8D486D16B8559B00085FA4 /* NoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteStore.h; sourceTree = "<group>"; };
+		6D8D486E16B8559B00085FA4 /* NoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteStore.m; sourceTree = "<group>"; };
+		6D8D487016B87ACD00085FA4 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		6D8D487116B87ACD00085FA4 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		6D8D487416B87ACE00085FA4 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		6D8D487516B87ACE00085FA4 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		6D8D487C16B8811B00085FA4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6D8D488216B89FA800085FA4 /* AddNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteCell.h; sourceTree = "<group>"; };
+		6D8D488316B89FA800085FA4 /* AddNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteCell.m; sourceTree = "<group>"; };
+		6D8D488616B8A40800085FA4 /* NoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCell.h; sourceTree = "<group>"; };
+		6D8D488716B8A40800085FA4 /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8D487D16B8811B00085FA4 /* CoreData.framework in Frameworks */,
 				6D8D481516B8447F00085FA4 /* UIKit.framework in Frameworks */,
 				6D8D481716B8447F00085FA4 /* Foundation.framework in Frameworks */,
 				6D8D481916B8447F00085FA4 /* CoreGraphics.framework in Frameworks */,
@@ -95,9 +130,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D8D3E1B16B9D170003F3542 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				6D8D3E1D16B9D19B003F3542 /* AddNoteCommand.h */,
+				6D8D3E1E16B9D19B003F3542 /* AddNoteCommand.m */,
+				6D8D3E2016B9E7FA003F3542 /* RemoveNoteCommand.h */,
+				6D8D3E2116B9E7FA003F3542 /* RemoveNoteCommand.m */,
+			);
+			name = control;
+			sourceTree = "<group>";
+		};
 		6D8D480516B8447F00085FA4 = {
 			isa = PBXGroup;
 			children = (
+				6D8D487C16B8811B00085FA4 /* CoreData.framework */,
+				6D8D486916B8531900085FA4 /* LifeNotesModel.xcdatamodeld */,
 				6D8D481A16B8447F00085FA4 /* LifeNotes */,
 				6D8D484916B8448000085FA4 /* LifeNotesTests */,
 				6D8D481316B8447F00085FA4 /* Frameworks */,
@@ -128,17 +176,12 @@
 		6D8D481A16B8447F00085FA4 /* LifeNotes */ = {
 			isa = PBXGroup;
 			children = (
+				6D8D486C16B854F800085FA4 /* model */,
+				6D8D3E1B16B9D170003F3542 /* control */,
+				6D8D485E16B850F400085FA4 /* view */,
+				6D8D485F16B8510D00085FA4 /* resources */,
 				6D8D482316B8447F00085FA4 /* AppDelegate.h */,
 				6D8D482416B8447F00085FA4 /* AppDelegate.m */,
-				6D8D482C16B8447F00085FA4 /* MainStoryboard.storyboard */,
-				6D8D482F16B8447F00085FA4 /* FirstViewController.h */,
-				6D8D483016B8448000085FA4 /* FirstViewController.m */,
-				6D8D483216B8448000085FA4 /* first.png */,
-				6D8D483416B8448000085FA4 /* first@2x.png */,
-				6D8D483616B8448000085FA4 /* SecondViewController.h */,
-				6D8D483716B8448000085FA4 /* SecondViewController.m */,
-				6D8D483916B8448000085FA4 /* second.png */,
-				6D8D483B16B8448000085FA4 /* second@2x.png */,
 				6D8D481B16B8447F00085FA4 /* Supporting Files */,
 			);
 			path = LifeNotes;
@@ -175,6 +218,48 @@
 				6D8D484C16B8448000085FA4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D8D485E16B850F400085FA4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6D8D488216B89FA800085FA4 /* AddNoteCell.h */,
+				6D8D488316B89FA800085FA4 /* AddNoteCell.m */,
+				6D8D486016B8516000085FA4 /* NotesViewController.h */,
+				6D8D486116B8516000085FA4 /* NotesViewController.m */,
+				6D8D486316B851F000085FA4 /* TagsViewController.h */,
+				6D8D486416B851F000085FA4 /* TagsViewController.m */,
+				6D8D486616B8528700085FA4 /* TagNotesViewController.h */,
+				6D8D486716B8528700085FA4 /* TagNotesViewController.m */,
+				6D8D488616B8A40800085FA4 /* NoteCell.h */,
+				6D8D488716B8A40800085FA4 /* NoteCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		6D8D485F16B8510D00085FA4 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D8D483216B8448000085FA4 /* first.png */,
+				6D8D483416B8448000085FA4 /* first@2x.png */,
+				6D8D482C16B8447F00085FA4 /* MainStoryboard.storyboard */,
+				6D8D483916B8448000085FA4 /* second.png */,
+				6D8D483B16B8448000085FA4 /* second@2x.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		6D8D486C16B854F800085FA4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6D8D486D16B8559B00085FA4 /* NoteStore.h */,
+				6D8D486E16B8559B00085FA4 /* NoteStore.m */,
+				6D8D487416B87ACE00085FA4 /* Tag.h */,
+				6D8D487516B87ACE00085FA4 /* Tag.m */,
+				6D8D487016B87ACD00085FA4 /* Note.h */,
+				6D8D487116B87ACD00085FA4 /* Note.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +378,17 @@
 			files = (
 				6D8D482116B8447F00085FA4 /* main.m in Sources */,
 				6D8D482516B8447F00085FA4 /* AppDelegate.m in Sources */,
-				6D8D483116B8448000085FA4 /* FirstViewController.m in Sources */,
-				6D8D483816B8448000085FA4 /* SecondViewController.m in Sources */,
+				6D8D486216B8516000085FA4 /* NotesViewController.m in Sources */,
+				6D8D486516B851F000085FA4 /* TagsViewController.m in Sources */,
+				6D8D486816B8528700085FA4 /* TagNotesViewController.m in Sources */,
+				6D8D486B16B8531A00085FA4 /* LifeNotesModel.xcdatamodeld in Sources */,
+				6D8D486F16B8559B00085FA4 /* NoteStore.m in Sources */,
+				6D8D487216B87ACD00085FA4 /* Note.m in Sources */,
+				6D8D487616B87ACE00085FA4 /* Tag.m in Sources */,
+				6D8D488416B89FA800085FA4 /* AddNoteCell.m in Sources */,
+				6D8D488816B8A40800085FA4 /* NoteCell.m in Sources */,
+				6D8D3E1F16B9D19B003F3542 /* AddNoteCommand.m in Sources */,
+				6D8D3E2216B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +397,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D8D485116B8448000085FA4 /* LifeNotesTests.m in Sources */,
+				6D8D487316B87ACD00085FA4 /* Note.m in Sources */,
+				6D8D487716B87ACE00085FA4 /* Tag.m in Sources */,
+				6D8D488516B89FA800085FA4 /* AddNoteCell.m in Sources */,
+				6D8D488916B8A40800085FA4 /* NoteCell.m in Sources */,
+				6D8D3E2316B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */,
+				6D8D3E2416B9E802003F3542 /* AddNoteCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +569,7 @@
 				6D8D485616B8448000085FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D8D485716B8448000085FA4 /* Build configuration list for PBXNativeTarget "LifeNotesTests" */ = {
 			isa = XCConfigurationList;
@@ -477,8 +578,22 @@
 				6D8D485916B8448000085FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D8D486916B8531900085FA4 /* LifeNotesModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D8D486A16B8531A00085FA4 /* LifeNotesModel.xcdatamodel */,
+			);
+			currentVersion = 6D8D486A16B8531A00085FA4 /* LifeNotesModel.xcdatamodel */;
+			path = LifeNotesModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6D8D480716B8447F00085FA4 /* Project object */;
 }
