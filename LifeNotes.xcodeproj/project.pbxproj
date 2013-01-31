@@ -144,8 +144,6 @@
 		6D8D480516B8447F00085FA4 = {
 			isa = PBXGroup;
 			children = (
-				6D8D487C16B8811B00085FA4 /* CoreData.framework */,
-				6D8D486916B8531900085FA4 /* LifeNotesModel.xcdatamodeld */,
 				6D8D481A16B8447F00085FA4 /* LifeNotes */,
 				6D8D484916B8448000085FA4 /* LifeNotesTests */,
 				6D8D481316B8447F00085FA4 /* Frameworks */,
@@ -165,6 +163,7 @@
 		6D8D481316B8447F00085FA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6D8D487C16B8811B00085FA4 /* CoreData.framework */,
 				6D8D481416B8447F00085FA4 /* UIKit.framework */,
 				6D8D481616B8447F00085FA4 /* Foundation.framework */,
 				6D8D481816B8447F00085FA4 /* CoreGraphics.framework */,
@@ -182,6 +181,7 @@
 				6D8D485F16B8510D00085FA4 /* resources */,
 				6D8D482316B8447F00085FA4 /* AppDelegate.h */,
 				6D8D482416B8447F00085FA4 /* AppDelegate.m */,
+				6D8D486916B8531900085FA4 /* LifeNotesModel.xcdatamodeld */,
 				6D8D481B16B8447F00085FA4 /* Supporting Files */,
 			);
 			path = LifeNotes;
@@ -590,7 +590,7 @@
 			);
 			currentVersion = 6D8D486A16B8531A00085FA4 /* LifeNotesModel.xcdatamodel */;
 			path = LifeNotesModel.xcdatamodeld;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
