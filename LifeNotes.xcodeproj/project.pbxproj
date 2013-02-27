@@ -46,6 +46,8 @@
 		6D8D488916B8A40800085FA4 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8D488716B8A40800085FA4 /* NoteCell.m */; };
 		6DBD7F9016BAE03200793D4B /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD7F8F16BAE03200793D4B /* TagCell.m */; };
 		6DBD7F9116BAE03200793D4B /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD7F8F16BAE03200793D4B /* TagCell.m */; };
+		6DFD31EF16BB541F00B33A7D /* TagNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD31EE16BB541F00B33A7D /* TagNoteCell.m */; };
+		6DFD31F016BB541F00B33A7D /* TagNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD31EE16BB541F00B33A7D /* TagNoteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		6D8D488716B8A40800085FA4 /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
 		6DBD7F8E16BAE03200793D4B /* TagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCell.h; sourceTree = "<group>"; };
 		6DBD7F8F16BAE03200793D4B /* TagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCell.m; sourceTree = "<group>"; };
+		6DFD31ED16BB541F00B33A7D /* TagNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagNoteCell.h; sourceTree = "<group>"; };
+		6DFD31EE16BB541F00B33A7D /* TagNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagNoteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +243,8 @@
 				6D8D486416B851F000085FA4 /* TagsViewController.m */,
 				6D8D486616B8528700085FA4 /* TagNotesViewController.h */,
 				6D8D486716B8528700085FA4 /* TagNotesViewController.m */,
+				6DFD31ED16BB541F00B33A7D /* TagNoteCell.h */,
+				6DFD31EE16BB541F00B33A7D /* TagNoteCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				6D8D3E1F16B9D19B003F3542 /* AddNoteCommand.m in Sources */,
 				6D8D3E2216B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */,
 				6DBD7F9016BAE03200793D4B /* TagCell.m in Sources */,
+				6DFD31EF16BB541F00B33A7D /* TagNoteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +418,7 @@
 				6D8D3E2316B9E7FA003F3542 /* RemoveNoteCommand.m in Sources */,
 				6D8D3E2416B9E802003F3542 /* AddNoteCommand.m in Sources */,
 				6DBD7F9116BAE03200793D4B /* TagCell.m in Sources */,
+				6DFD31F016BB541F00B33A7D /* TagNoteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

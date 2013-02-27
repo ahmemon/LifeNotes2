@@ -27,8 +27,13 @@
     __block NSUInteger count = 0;
     [regex enumerateMatchesInString:string options:0 range:NSMakeRange(0, [string length]) usingBlock:^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop){
         NSRange secondHalfRange = [match rangeAtIndex:2];
-        Tag* t = [NoteStore.defaultStore createTag];
-        t.tagName = [string substringWithRange:secondHalfRange];
+        NSString* tn = [string substringWithRange:secondHalfRange];
+        Tag* t = [NoteStore.defaultStore tagWithName:tn];
+        if (!t)
+        {
+            t = [NoteStore.defaultStore createTag];
+            t.tagName = tn;
+        }
         [t addNotesObject:n];
         // No need to recipcrocate. CoreData will do the equivalent of [n addTagObject:t]. If you do it anyway, it makes no difference (thankfully). 
         if (++count >= 100) *stop = YES;

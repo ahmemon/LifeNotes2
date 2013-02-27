@@ -108,19 +108,35 @@
                     </tabBar>
                     <connections>
                         <segue destination="dCF-qE-is0" kind="relationship" relationship="viewControllers" id="rXD-ah-PcO"/>
-                        <segue destination="Od3-2G-sw6" kind="relationship" relationship="viewControllers" id="EXz-qT-Kdg"/>
+                        <segue destination="O5s-NO-TTt" kind="relationship" relationship="viewControllers" id="bgO-hn-hi7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="75" y="171"/>
         </scene>
-        <!--Tags View Controller - Tags-->
+        <!--Navigation Controller - Tags-->
+        <scene sceneID="HYL-Z3-OSI">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="O5s-NO-TTt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tags" id="NKw-FN-Tjt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cED-jw-8cM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Od3-2G-sw6" kind="relationship" relationship="rootViewController" id="hXJ-hB-ukH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj6-rh-168" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="621"/>
+        </scene>
+        <!--Tags View Controller-->
         <scene sceneID="g1q-zH-bmy">
             <objects>
                 <tableViewController id="Od3-2G-sw6" customClass="TagsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" id="bYP-GL-IJi">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -131,10 +147,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="39"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-td-T5b">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-td-T5b">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="189" id="hF2-Tq-8ZL"/>
+                                                <constraint firstAttribute="width" constant="276" id="B38-LV-nNw"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -158,22 +174,22 @@
                             <outlet property="delegate" destination="Od3-2G-sw6" id="94r-uX-XMD"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Tags" id="Sp5-Ny-83s"/>
+                    <navigationItem key="navigationItem" id="e7W-BP-RAj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ff9-iI-haW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="598"/>
+            <point key="canvasLocation" x="1033" y="621"/>
         </scene>
         <!--Tag Notes View Controller-->
         <scene sceneID="3xt-Qo-lcn">
             <objects>
                 <tableViewController id="Gjy-xk-YHs" customClass="TagNotesViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="Yhw-fq-R1z">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tagNotesCell" rowHeight="63" id="Lm1-0Y-JN2">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tagNotesCell" rowHeight="63" id="Lm1-0Y-JN2" customClass="TagNoteCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -196,6 +212,9 @@
                                     <constraint firstItem="fsj-V2-6bS" firstAttribute="leading" secondItem="Lm1-0Y-JN2" secondAttribute="leading" type="default" id="SYQ-lX-HD0"/>
                                     <constraint firstItem="fsj-V2-6bS" firstAttribute="top" secondItem="Lm1-0Y-JN2" secondAttribute="top" type="default" id="UyR-sK-AiE"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="tagNoteText" destination="fsj-V2-6bS" id="Rs4-AF-VRp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -207,7 +226,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="toe-Gf-AZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075" y="598"/>
+            <point key="canvasLocation" x="1449" y="621"/>
         </scene>
     </scenes>
     <classes>
@@ -237,6 +256,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TagCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="tagTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TagNoteCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TagNoteCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tagNoteText" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="TagNotesViewController" superclassName="UITableViewController">

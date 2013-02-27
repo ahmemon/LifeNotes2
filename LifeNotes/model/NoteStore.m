@@ -124,22 +124,6 @@
     return successful;
 }
 
-- (void)removeNote:(Note*)p
-{
-    [context deleteObject:p];
-    [allNotes removeObjectIdenticalTo:p];
-}
-
-- (NSArray*)allNotes
-{
-    return allNotes;
-}
-
-- (NSArray*) allTags
-{
-    return allTags;
-}
-
 - (Note*)createNote
 {
     double order;
@@ -178,6 +162,35 @@
     [allTags addObject:p];
     
     return p;
+}
+
+- (NSArray*)allNotes
+{
+    return allNotes;
+}
+
+- (NSArray*) allTags
+{
+    return allTags;
+}
+
+- (void)removeNote:(Note*)p
+{
+    [context deleteObject:p];
+    [allNotes removeObjectIdenticalTo:p];
+}
+
+- (Tag*)tagWithName:(NSString*)tagName
+{
+    //TODO: Do smarter filtering instead of sequential search, query CoreData.
+    
+    for (int i = 0; i < allTags.count; i++)
+    {
+        Tag* t = [allTags objectAtIndex:i];
+        if ([t.tagName isEqualToString:tagName])
+            return t;
+    }
+    return nil;
 }
 
 @end

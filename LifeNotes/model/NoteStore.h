@@ -30,6 +30,8 @@
 - (NSArray*)allNotes;
 - (NSArray*)allTags;
 
+- (Tag*)tagWithName:(NSString*)tagName;
+
 - (Note*)createNote;
 - (Tag*)createTag;
 
