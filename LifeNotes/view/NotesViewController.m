@@ -20,7 +20,6 @@
 @property (weak, nonatomic) UITextField* addNoteTextField;
 @property (weak, nonatomic) UIButton* addNoteDoneButton;
 
-
 - (IBAction)addNoteDoneTap:(id)sender;
 
 @end
@@ -49,7 +48,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
