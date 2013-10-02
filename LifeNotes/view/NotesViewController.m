@@ -15,7 +15,7 @@
 #import "RemoveNoteCommand.h"
 #import "Tag.h"
 
-@interface NotesViewController ()
+@interface NotesViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) UITextField* addNoteTextField;
 @property (weak, nonatomic) UIButton* addNoteDoneButton;
@@ -79,6 +79,7 @@
         self.addNoteDoneButton = addNoteCell.addNoteDoneButton;
         self.addNoteTextField.keyboardType = UIKeyboardTypeTwitter;
         self.addNoteTextField.returnKeyType = UIReturnKeyDone;
+        addNoteCell.addNoteTextField.delegate = self;
     }
     else
     {
@@ -145,7 +146,18 @@
      */
 }
 
+- (BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [self addNote];
+    return YES;
+}
+
 - (IBAction)addNoteDoneTap:(id)sender
+{
+    [self addNote];
+}
+
+- (void) addNote
 {
     [AddNoteCommand performWithString:self.addNoteTextField.text];
     self.addNoteTextField.text = @"";
