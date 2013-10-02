@@ -27,7 +27,6 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-    // Called as part of the transition from the background to the inactive state; 
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
