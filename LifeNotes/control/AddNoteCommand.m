@@ -15,6 +15,9 @@
 
 + (void) performWithString:(NSString*)string
 {
+    if (string.length == 0)
+        return;
+    
     Note* n = [NoteStore.defaultStore createNote];
     n.noteName = string;
     
