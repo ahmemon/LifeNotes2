@@ -36,7 +36,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Called why the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
 @end
